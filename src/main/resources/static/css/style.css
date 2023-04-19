@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+     background-color: lightblue;
+}
+.contattaci-titolo {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  color: red;
+  height: 70vh;
+}

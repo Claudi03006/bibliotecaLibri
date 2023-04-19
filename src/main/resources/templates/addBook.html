@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link th:href="@{/css/secondStyle.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script>
+function goToHome() {
+  window.location.href = "/showBooks";
+}
+</script>
+<form action="api/addBook" method="post">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="Inserissci il titilo">
+  </div>
+  <div class="form-group">
+    <label for="nome">Author</label>
+    <input type="text" class="form-control" id="author" name="author" placeholder="Inserisci l'autore">
+  </div>
+  <div class="form-group">
+    <label for="telefono">PublishingHouse</label>
+    <input type="tel" class="form-control" id="publishingHouse"  name="publishingHouse" placeholder="inserire la casa editrice">
+  </div>
+  <button type="submit" class="btn btn-primary">Registrati</button>
+</form>
+<div class="position-relative">
+  <button class="btn btn-secondary centre mt-5" onclick="goToHome()">Home</button>
+</div>
+</body>
+</html>

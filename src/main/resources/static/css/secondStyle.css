@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+     background-color: lightblue;
+}
+
+.position-relative button {
+  position: absolute;
+   top: 60px; right: 30px;
+   height: 5.5vh;
+     font-size: 20px; 
+     background-color: purple;
+}
